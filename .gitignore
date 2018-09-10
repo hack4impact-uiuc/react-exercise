@@ -58,3 +58,6 @@ typings/
 .env
 
 src/**/*.css
+
+.idea
+.DS_Store
