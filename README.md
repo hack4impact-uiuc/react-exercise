@@ -26,19 +26,16 @@ Install the [React Devtools](https://github.com/facebook/react-devtools) to easi
 
 Your text editor may not natively support the JSX syntax that is used in this project, but there may be plugins to get proper syntax highlighting. For example, Sublime Text uses the `Babel` plugin.
 
-Open up your terminal and navigate to the directory you want this project in. Then clone this repository by running:
-```
-git clone https://github.com/hack4impact-uiuc/react-exercise.git
-```
+First, fork this repository. The fork button on your top right. What this does is copies this repository over to your account. Now you should have a repository with the name `<yourusername>/flask-exercise`.
 
-If you have *Forked* this repository, then hit the green "Clone or Download" dropdown instead and copy paste your link after:
-```
-git clone [LINK HERE]
-```
+It should look like this (my username is tko22):
+![fork](docs/fork.png)
 
-Go into the newly cloned directory:
+Then, clone this repository (click the green button saying "Clone or Download", choose http, and copy and paste it the location `<url>` ) and go into it:
+
 ```
-cd react-exercise
+$ git clone <url>
+$ cd react-exercise
 ```
 
 Install project dependencies:
@@ -125,6 +122,43 @@ Some styling related resources:
 [Airbnb's Javascript Style Guide](https://github.com/airbnb/javascript)<br>
 [Airbnb's React Style Guide](https://github.com/airbnb/javascript/tree/master/react)<br>
 [Airbnb's CSS Style Guide](https://github.com/airbnb/css)
+
+## Submitting
+
+When you're done with all the steps, push your changes to your github repo!
+
+Before you can submit a PR, you'll have to push your branch to a remote branch (the one that's on GitHub, not local).
+
+Check to see that you're on your branch:
+
+```
+git branch
+```
+
+If you want to make sure all of your commits are in:
+
+```
+git log
+```
+
+Press `Q` to quit the `git log` screen.
+
+Push your commits to your remote branch:
+
+```
+git push
+```
+
+The first time you do this, you might get an error since your remote branch doesn't exist yet. Usually it will tell you the correct command to use:
+
+```
+git push --set-upstream origin <YOUR_BRANCH_NAME>
+```
+
+Note: this only needs to be done the first time you push a new branch. You can use just `git push` afterwards.
+
+Once this is done, please send an email to tko@hack4impact.org with the link to your _forked_ repository and your branch name. We will need these two things to view your submission.
+
 
 ```
 H A C K 4 I M P A C T
