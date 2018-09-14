@@ -26,7 +26,7 @@ Install the [React Devtools](https://github.com/facebook/react-devtools) to easi
 
 Your text editor may not natively support the JSX syntax that is used in this project, but there may be plugins to get proper syntax highlighting. For example, Sublime Text uses the `Babel` plugin.
 
-First, fork this repository. The fork button on your top right. What this does is copies this repository over to your account. Now you should have a repository with the name `<yourusername>/flask-exercise`.
+First, fork this repository. The fork button on your top right. What this does is copies this repository over to your account. Now you should have a repository with the name `<yourusername>/react-exercise`.
 
 It should look like this (my username is davidachang):
 ![fork](docs/forke.png)
