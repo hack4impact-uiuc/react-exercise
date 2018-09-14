@@ -28,7 +28,7 @@ Your text editor may not natively support the JSX syntax that is used in this pr
 
 First, fork this repository. The fork button on your top right. What this does is copies this repository over to your account. Now you should have a repository with the name `<yourusername>/flask-exercise`.
 
-It should look like this (my username is tko22):
+It should look like this (my username is davidachang):
 ![fork](docs/forke.png)
 
 Then, clone this repository (click the green button saying "Clone or Download", choose http, and copy and paste it the location `<url>` ) and go into it:
