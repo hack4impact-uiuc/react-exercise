@@ -16,8 +16,26 @@ class Instructions extends Component {
     }
   }
 
+  renderItems() {
+    const items = this.props.items
+      .filter(item => item.length >= 3)
+      .map((item, i) => {
+        if (i % 2) {
+          return <li key={i}>{item.toUpperCase()}</li>
+        } else {
+          return <li key={i}>{item}</li>
+        }
+      })
+    return <ul>{items}</ul>
+  }
+
   render() {
-    return <div className="instructions">{this.renderImage()}</div>
+    return (
+      <div className="instructions">
+        {this.renderImage()}
+        {this.renderItems()}
+      </div>
+    )
   }
 }
 
