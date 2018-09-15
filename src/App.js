@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
-import { Instructions } from './components'
+import { Counter, Instructions } from './components'
 import './styles/app.css'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      initialCount: 0
+    }
+  }
+
   render() {
     return (
       <div className="app">
@@ -11,6 +18,7 @@ class App extends Component {
           items={['i', 'iii', 'love', 'hack', 'for', 'impact', 'uiuc']}
           displayImage={true}
         />
+        <Counter count={this.state.initialCount} />
       </div>
     )
   }

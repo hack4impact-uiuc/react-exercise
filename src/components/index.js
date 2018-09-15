@@ -1,3 +1,4 @@
+import Counter from './Counter.component'
 import Instructions from './Instructions.component'
 
-export { Instructions }
+export { Counter, Instructions }
