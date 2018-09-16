@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Counter, Instructions } from './components'
+import { Counter, InitialCountForm, Instructions } from './components'
 import './styles/app.css'
 
 class App extends Component {
@@ -12,10 +12,7 @@ class App extends Component {
     this.setCount = this.setCount.bind(this)
   }
 
-  setCount(event) {
-    event.preventDefault()
-    const data = new FormData(event.target)
-    const count = parseInt(data.get('count'), 10)
+  setCount(count) {
     this.setState({
       count
     })
@@ -30,10 +27,7 @@ class App extends Component {
           displayImage={true}
         />
         <Counter count={this.state.count} />
-        <form onSubmit={this.setCount}>
-          <input name="count" type="number" />
-          <input type="submit" />
-        </form>
+        <InitialCountForm setCount={this.setCount} />
       </div>
     )
   }
