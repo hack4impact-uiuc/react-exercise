@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Counter, InitialCountForm, Instructions } from './components'
 import './styles/app.css'
 
+const items = ['i', 'iii', 'love', 'hack', 'for', 'impact', 'uiuc']
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -22,11 +24,8 @@ class App extends Component {
     return (
       <div className="app">
         <h1>Hello World!</h1>
-        <Instructions
-          items={['i', 'iii', 'love', 'hack', 'for', 'impact', 'uiuc']}
-          displayImage={true}
-        />
-        <Counter count={this.state.count} />
+        <Instructions items={items} displayImage={true} />
+        <Counter count={this.state.count} setCount={this.setCount} />
         <InitialCountForm setCount={this.setCount} />
       </div>
     )

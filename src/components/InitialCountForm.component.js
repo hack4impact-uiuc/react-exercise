@@ -6,7 +6,7 @@ class InitialCountForm extends Component {
     this.setCount = this.setCount.bind(this)
   }
 
-  setCount(event) {
+  setCount = event => {
     event.preventDefault()
     const data = new FormData(event.target)
     const count = parseInt(data.get('count'), 10)
