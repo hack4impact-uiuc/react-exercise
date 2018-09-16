@@ -6,8 +6,19 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      initialCount: 0
+      count: 0
     }
+
+    this.setCount = this.setCount.bind(this)
+  }
+
+  setCount(event) {
+    event.preventDefault()
+    const data = new FormData(event.target)
+    const count = parseInt(data.get('count'), 10)
+    this.setState({
+      count
+    })
   }
 
   render() {
@@ -18,7 +29,11 @@ class App extends Component {
           items={['i', 'iii', 'love', 'hack', 'for', 'impact', 'uiuc']}
           displayImage={true}
         />
-        <Counter count={this.state.initialCount} />
+        <Counter count={this.state.count} />
+        <form onSubmit={this.setCount}>
+          <input name="count" type="number" />
+          <input type="submit" />
+        </form>
       </div>
     )
   }
