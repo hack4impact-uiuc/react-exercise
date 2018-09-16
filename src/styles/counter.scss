@@ -1,0 +1,17 @@
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+input[type=submit], button {
+	border: 1px solid #0e83cd;
+	color: #0e83cd;
+}
+
+button:hover,
+button:active {
+    color: #fff;
+    background: #0e83cd;
+}

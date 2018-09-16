@@ -8,4 +8,12 @@
     width: 400px;
     padding-top: 1rem;
   }
+
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline;
+    padding: 1px 3px;
+  }
 }

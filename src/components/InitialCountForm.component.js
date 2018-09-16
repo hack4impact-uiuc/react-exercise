@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './../styles/counter.css'
 class InitialCountForm extends Component {
   constructor(props) {
     super(props)
@@ -15,10 +15,14 @@ class InitialCountForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.setCount}>
-        <input name="count" type="number" />
-        <input type="submit" />
-      </form>
+      <div>
+        <p>Set count:</p>
+        <form onSubmit={this.setCount}>
+          <input name="count" type="number" />
+          <br />
+          <input type="submit" />
+        </form>
+      </div>
     )
   }
 }
