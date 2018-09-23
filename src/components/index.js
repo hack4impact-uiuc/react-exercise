@@ -1,3 +1,5 @@
+import Counter from './Counter.component'
+import InitialCountForm from './InitialCountForm.component'
 import Instructions from './Instructions.component'
 
-export { Instructions }
+export { Counter, InitialCountForm, Instructions }
